@@ -4,7 +4,6 @@ import { useAuthContext } from '../hooks/useAuthContext';
 //style and images
 import './Navbar.css';
 import Temple from '../assets/temple.svg';
-
 import React from 'react';
 
 export default function Navbar() {
