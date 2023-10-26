@@ -14,18 +14,20 @@ export const useLogout = () => {
 
     try {
       //do online status before logout bcoz after that firebase won`t allow it
+      // console.log('1');
       const { uid } = user;
+      // console.log(uid);
       await projectFirestore
         .collection('users')
         .doc(uid)
         .update({ online: false });
-
+      // console.log('2');
       // sign the user out
       await projectAuth.signOut();
-
+      // console.log('3');
       // dispatch logout action
       dispatch({ type: 'LOGOUT' });
-
+      // console.log('4');
       // update state
       if (!isCancelled) {
         setIsPending(false);

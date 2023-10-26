@@ -39,7 +39,7 @@ export default function Signup() {
 
   return (
     <form className="auth-form" onSubmit={handleSubmit}>
-      <h2>Sign</h2>
+      <h2>SignUp</h2>
       <label>
         <span>email:</span>
         <input

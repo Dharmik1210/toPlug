@@ -1,5 +1,3 @@
-/*all files which are not specific to any pages will be under component folder*/
-
 import { Link } from 'react-router-dom';
 import { useLogout } from '../hooks/useLogout';
 import { useAuthContext } from '../hooks/useAuthContext';

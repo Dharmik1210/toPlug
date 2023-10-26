@@ -158,6 +158,7 @@ export default function Create() {
   const { addDocument, response } = useFirestore('projects');
   const { user } = useAuthContext();
   const { documents } = useCollection('users');
+
   const [users, setUsers] = useState([]);
 
   // form field values
